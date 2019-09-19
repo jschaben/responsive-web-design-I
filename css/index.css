@@ -66,67 +66,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-@media(max-width: 800px){
-	.container{
-		width:90%;
-	}
-	header{
-		display: flex;
-		flex-direction: column-reverse;
-	}
-	header nav{
-		margin-top: 45px;
-		width: 92%;
-	}
-	header nav a:last-child{
-		margin-right: 0px;
-	}
-	.innovate{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	
-	.image1{
-		display: none;
-	}
-}
-@media(max-width: 500px){
-	.image1{
-		display: none;
-	}
-	.container{
-		width: 100%;
-	}
-	header nav{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-	header nav a{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		padding: 20px;
-		border-bottom: 1px solid black;
-	}
-	header nav a:first-child{
-		border-top: 1px solid black;
-	}
-	
-	
-	.innovate{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.content{
-		display:flex;
-		flex-direction: column;
 
-	}
-}
 body{
 	display: flex;
 	justify-content: center;
@@ -151,8 +91,7 @@ header nav a{
 	text-decoration: none;
 }
 .innovate{
-	display: flex;
-	justify-content: flex-end;
+	display: flex;	
 	margin: 70px 0px 75px 0px;
 }
 .innovote-text{
@@ -167,12 +106,10 @@ header nav a{
 
 
 .logo{
-	margin: 20px 0px 0px 110px;
+	margin-left: 110px;
 	padding-top: 20px;
 }
-header img{
-	width: 50%;
-}
+
  
 .button1{
     padding: 10px 40px;
@@ -216,4 +153,69 @@ footer{
     margin-bottom: 50px;
 	padding: 25px;
 	text-align: center
+}
+@media(max-width: 800px){
+	.container{
+		width:90%;
+	}
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;		
+	}
+	header nav{
+		margin-top: 45px;
+		width: 92%;
+	}
+	.logo{
+		margin-left: 0px;
+	}	
+	
+	.innovate{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.image1{
+		display: none;
+	}
+}
+@media(max-width: 500px){
+	.image1{
+		display: none;
+	}
+	.container{
+		width: 100%;
+	}
+	header nav{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	header nav a{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		border-bottom: 1px solid black;
+	}
+	header nav a:first-child{
+		border-top: 1px solid black;
+	}
+	
+	.logo{
+		margin-left: 0px;
+	}	
+	.innovate{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.content{
+		display:flex;
+		flex-direction: column;
+
+	}
 }
